@@ -1,0 +1,215 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main login container */
+.login {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    /* Ensures both sections are side-by-side */
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #636bf6, #88a8f5);
+    background-attachment: fixed;
+}
+
+.loginLeft {
+    background-color: #636bf6;
+    height: 100vh;
+    width: 60vw;
+    /* Takes up 60% of the screen on larger devices */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: linear-gradient(45deg, #636bf6, #88a8f5);
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.rightLogin {
+    height: 100vh;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.15);
+}
+
+.loginTitle {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #636bf6;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+.loginWelcome {
+    font-size: 1.5rem;
+    color: #666;
+    margin-bottom: 40px;
+    font-weight: 300;
+}
+
+.loginForm {
+    width: 100%;
+    max-width: 400px;
+}
+
+.inputWrapper {
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+.loginInput {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.loginInput:focus {
+    outline: none;
+    border-color: #636bf6;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.loginInput:hover {
+    transform: scale(1.02);
+}
+
+.formActions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.rememberMe {
+    display: flex;
+    align-items: center;
+}
+
+.rememberMe input {
+    margin-right: 8px;
+}
+
+.forgotPasswordLink {
+    color: #636bf6;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.forgotPasswordLink:hover {
+    color: #4a52d4;
+}
+
+.submitButtonWrapper {
+    text-align: center;
+}
+
+.loginButton {
+    background: linear-gradient(135deg, #636bf6, #88a8f5);
+    color: white;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0px 10px 20px rgba(99, 107, 246, 0.3);
+    transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.loginButton:hover {
+    background: linear-gradient(135deg, #4a52d4, #6c85e8);
+    box-shadow: 0px 12px 24px rgba(99, 107, 246, 0.4);
+    transform: translateY(-3px);
+}
+
+.signupPrompt {
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+.signupLink {
+    color: #636bf6;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.signupLink:hover {
+    color: #4a52d4;
+}
+
+/* Media Queries for responsiveness */
+
+/* Hide the left side and center the login form on smaller screens */
+@media (max-width: 768px) {
+    .login {
+        flex-direction: column;
+        /* Stack the elements vertically */
+        justify-content: center;
+        /* Center the login form */
+        align-items: center;
+    }
+
+    .loginLeft {
+        display: none;
+        /* Hide the left section */
+    }
+
+    .rightLogin {
+        width: 100vw;
+        /* Make the login form full width */
+        height: 100vh;
+        padding: 20px;
+        border-radius: 0;
+        /* Remove border radius */
+        box-shadow: none;
+        /* Remove shadow */
+    }
+}
+
+/* Further optimization for very small screens */
+@media (max-width: 480px) {
+    .loginTitle {
+        font-size: 2rem;
+        /* Reduce title size */
+    }
+
+    .loginForm {
+        max-width: 300px;
+    }
+
+    .loginLeft {
+        display: none;
+    }
+
+    .loginButton {
+        padding: 10px 15px;
+    }
+}
