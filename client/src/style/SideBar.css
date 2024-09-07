@@ -1,0 +1,117 @@
+.sidebar {
+    width: 250px;
+    height: 94vh;
+    background: #ffffff;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    transition: width 0.3s ease;
+}
+
+.sidebar.collapsed {
+    width: 80px;
+    overflow: hidden;
+}
+
+.sidebar .arrow {
+    position: absolute;
+    top: 20px;
+    left: 275px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #fff;
+    background: #636bf6;
+    z-index: 1;
+    transition: color 0.2s;
+    padding: 7px 8.7px;
+}
+
+.sidebar.collapsed .arrow {
+    left: 105px;
+}
+
+.sidebar .arrow:hover {
+    color: #4d54e0;
+}
+
+.sidebar .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.sidebar .header h2 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 600;
+    color: #636bf6;
+    text-transform: uppercase;
+    transition: opacity 0.3s;
+}
+
+.sidebar.collapsed .header h2 {
+    opacity: 0;
+}
+
+.sidebar .menu {
+    flex: 1;
+}
+
+.sidebar .menu-item {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-decoration: none;
+    color: #333;
+}
+
+.sidebar .menu-item i {
+    font-size: 15px;
+    margin-right: 15px;
+    background-color: #dce4f54d;
+    border-radius: 5px;
+    padding: 8px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.sidebar .menu-item:hover i {
+    background-color: #636bf6;
+    color: #fff;
+}
+
+.sidebar .menu-item p {
+    margin: 0;
+    transition: opacity 0.3s;
+}
+
+.sidebar.collapsed .menu-item p {
+    opacity: 0;
+}
+
+.sidebar .bottom-section {
+    margin-top: auto;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+    margin-bottom: 0px;
+}
+
+.sidebar .menu-item.active {
+    color: #4d54e0;
+}
