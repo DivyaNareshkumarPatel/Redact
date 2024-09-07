@@ -1,25 +1,21 @@
-/* General Reset */
-* {
+.login {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body,
-html {
+.login {
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
 }
 
-/* Main login container */
 .login {
     height: 100vh;
     overflow: hidden;
     display: flex;
     justify-content: space-between;
-    /* Ensures both sections are side-by-side */
     align-items: center;
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(135deg, #636bf6, #88a8f5);
@@ -30,7 +26,6 @@ html {
     background-color: #636bf6;
     height: 100vh;
     width: 60vw;
-    /* Takes up 60% of the screen on larger devices */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -164,41 +159,29 @@ html {
 .signupLink:hover {
     color: #4a52d4;
 }
-
-/* Media Queries for responsiveness */
-
-/* Hide the left side and center the login form on smaller screens */
 @media (max-width: 768px) {
     .login {
         flex-direction: column;
-        /* Stack the elements vertically */
         justify-content: center;
-        /* Center the login form */
         align-items: center;
     }
 
     .loginLeft {
         display: none;
-        /* Hide the left section */
     }
 
     .rightLogin {
         width: 100vw;
-        /* Make the login form full width */
         height: 100vh;
         padding: 20px;
         border-radius: 0;
-        /* Remove border radius */
         box-shadow: none;
-        /* Remove shadow */
     }
 }
 
-/* Further optimization for very small screens */
 @media (max-width: 480px) {
     .loginTitle {
         font-size: 2rem;
-        /* Reduce title size */
     }
 
     .loginForm {
