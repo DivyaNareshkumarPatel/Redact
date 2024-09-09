@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../style/documents.css';
 
 const documents = [
@@ -9,6 +9,24 @@ const documents = [
 ];
 
 export default function DocumentTable() {
+  const [activeIndex, setActiveIndex] = useState(null);
+
+  const handleOptionsClick = (index) => {
+    setActiveIndex(activeIndex === index ? null : index);
+  };
+
+  const handleEdit = (name) => {
+    alert(`Edit ${name}`);
+  };
+
+  const handleDelete = (name) => {
+    alert(`Delete ${name}`);
+  };
+
+  const handleRename = (name) => {
+    alert(`Rename ${name}`);
+  };
+
   return (
     <div className='doc-content'>
       <h2>Documents</h2>
@@ -30,9 +48,21 @@ export default function DocumentTable() {
               <td>{doc.status}</td>
               <td>{doc.modified}</td>
               <td className='options-btn'>
-                <button className='btn-edit'>Edit</button>
-                <button className='btn-delete'>Delete</button>
-                <button className='btn-rename'>Rename</button>
+                <div className='options-menu'>
+                  <button
+                    className='options-button'
+                    onClick={() => handleOptionsClick(index)}
+                  >
+                    <i class="dot fa-solid fa-ellipsis"></i>
+                  </button>
+                  {activeIndex === index && (
+                    <div className='dropdown-menu'>
+                      <button onClick={() => handleEdit(doc.name)} className='dropdown-item'>Edit</button>
+                      <button onClick={() => handleDelete(doc.name)} className='dropdown-item'>Delete</button>
+                      <button onClick={() => handleRename(doc.name)} className='dropdown-item'>Rename</button>
+                    </div>
+                  )}
+                </div>
               </td>
             </tr>
           ))}
