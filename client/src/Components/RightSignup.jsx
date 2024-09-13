@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from 'axios';
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "../style/login.css";
 
 export default function RightSignup() {
@@ -12,6 +12,8 @@ export default function RightSignup() {
   const [confirmPasswordError, setConfirmPasswordError] = useState('');
   const [message, setMessage] = useState('');
   const [messageType, setMessageType] = useState('');
+
+  const navigate = useNavigate();
 
   const validateEmail = (email) => {
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -53,8 +55,18 @@ export default function RightSignup() {
 
     try {
       const response = await axios.post('http://localhost:5000/api/auth/signup', { email, password });
+      
+      // Store the JWT token in localStorage
+      const token = response.data.token;
+      localStorage.setItem('token', token);
+
       setMessage('Signup successful!');
       setMessageType('success');
+
+      setTimeout(() => {
+        navigate('/');
+      }, 1000);
+
     } catch (err) {
       setMessage(err.response ? err.response.data.msg : 'Server error');
       setMessageType('error');
@@ -121,10 +133,10 @@ export default function RightSignup() {
           {confirmPasswordError && <div className="errorText">{confirmPasswordError}</div>}
         </div>
         <div className="submitButtonWrapper">
-          <button className="loginButton" style={{marginTop: "40px"}}>Sign Up</button>
+          <button className="loginButton" style={{ marginTop: "40px" }}>Sign Up</button>
         </div>
         {message && (
-          <div className={`messageWrapper ${messageType}`}>
+          <div className={`messageWrapper ${messageType} visible`}>
             {message}
           </div>
         )}

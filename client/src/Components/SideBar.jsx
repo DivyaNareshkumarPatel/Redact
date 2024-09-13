@@ -1,12 +1,18 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import "../style/SideBar.css";
 
 export default function SideBar() {
   const [collapsed, setCollapsed] = useState(false);
+  const navigate = useNavigate();
 
   const handleToggle = () => {
     setCollapsed(!collapsed);
+  };
+
+  const handleLogout = () => {
+    localStorage.removeItem('token');
+    navigate('/login');
   };
 
   return (
@@ -32,10 +38,10 @@ export default function SideBar() {
         </NavLink>
       </div>
       <div className="bottom-section">
-        <NavLink to="/logout" className="menu-item" activeClassName="active">
+        <div className="menu-item" onClick={handleLogout}>
           <i className="fa-solid fa-arrow-right-from-bracket"></i>
           <p>Log out</p>
-        </NavLink>
+        </div>
       </div>
     </div>
   );

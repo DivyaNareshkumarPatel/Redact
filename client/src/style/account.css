@@ -42,12 +42,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 12px; /* Subtle rounding for a modern UI */
+    border-radius: 12px;
 }
 
 .account-icon {
     font-size: 100px;
-    color: #888888; /* Greyish icon color */
+    color: #888888;
 }
 
 .profile-info {

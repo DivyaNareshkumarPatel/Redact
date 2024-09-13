@@ -1,0 +1,158 @@
+Problem Statement ID	
+1587
+Problem Statement Title	
+Student Innovation
+Description	
+Disaster Management includes ideas related to risk mitigation and Planning before, after or Duration of Disaster.
+Organization	AICTE, MIC-Student Innovation
+Department	Ministry of Education's Innovation Cell (MIC)
+Category	Software
+Theme	Disaster Management
+Youtube Link	
+Dataset Link	
+
+
+Problem Statement ID	
+1588
+Problem Statement Title	
+Student Innovation
+Description	
+Technology ideas in tertiary sectors like Hospitality, Financial Services, Entertainment and Retail.
+Organization	AICTE, MIC-Student Innovation
+Department	Ministry of Education's Innovation Cell (MIC)
+Category	Software
+Theme	Miscellaneous
+Youtube Link	
+Dataset Link	
+
+Problem Statement ID	
+1591
+Problem Statement Title	
+Student Innovation
+Description	
+A solution/idea that can boost the current situation of the tourism industries including hotels, travel and others.
+Organization	AICTE, MIC-Student Innovation
+Department	Ministry of Education's Innovation Cell (MIC)
+Category	Software
+Theme	Transportation & Logistics
+Youtube Link	
+Dataset Link	
+
+Problem Statement ID	
+1604
+Problem Statement Title	
+Conversational Image Recognition Chatbot
+Description	
+Background: Ever since the birth of AI and computer vision, modeling conversations remains one of the field’s challenges, especially to combine both natural language processing and image recognition. Chatbots are now widely used as part of platform as applications like Apple’s Siri, Google’s Google Assistant or Microsoft’s Cortana. Detailed Description: Generally, a conversational Chatbot is an application that is able to communicate with humans using natural language. However there exists a need for an image recognition deep learning based Chatbot is an application to recognize the images, uploaded by user and answer the questions about the image. The main problem domain of this project is building a image recognization Chatbot, which is capable of recognize the object in an image and generating the best response for any the user’s query about the image. Expected Solution: Image recognition Chatbot is expected to detect the object in the image and have the related dialog of the image after training, also have understanding of the sender’s messages so that it can predict which sort of response will be relevant and it must be correct lexically and grammatically while generating the reply.
+Organization	Bharat Electronics Limited (BEL)
+Department	Bharat Electronics Limited (BEL)
+Category	Software
+Theme	Smart Automation
+Youtube Link	
+Dataset Link	A good dataset will contribute to a model with good precision and recall. In the realm of object detection in images or motion pictures, there are some household NAmes commonly used and referenced by researchers and practitioners. The Names in the list include Pascal, ImageNet, SUN, and COCO.
+
+Problem Statement ID	
+1612
+Problem Statement Title	
+Automated Bus Scheduling and Route Management System for Delhi Transport Corporation
+Description	
+Background: Efficient bus scheduling and route planning are essential for the smooth operation of public bus transport services. Currently, the Delhi Transport Corporation (DTC) relies on manual methods for scheduling and planning, which are time-consuming and resource-intensive. To improve operational efficiency, reduce errors, and enhance service reliability, DTC needs an automated software solution capable of handling both linked and unlinked duty scheduling. Additionally, the solution should facilitate route management by mapping all existing routes and highlighting overlaps with proposed new routes. This project aims to develop a comprehensive software solution to streamline bus scheduling, optimize resource utilization, and improve route planning. Detailed Description: The Automated Bus Scheduling and Route Management System will utilize algorithms, data analytics, and geographic information system (GIS) technologies to automate various aspects of bus scheduling and route management. The system will potentially include (but not limited to) features such as: Linked Duty Scheduling: Assign a specific crew to a bus at the start of their duty, ensuring they remain with the bus throughout their shift. Provide tools to manage and monitor crew and bus assignments for better familiarity and accountability. Unlinked Duty Scheduling: Allow crews to hand over buses to other crew members after assigned completing their trips. Manage rest periods for crew menbers and after their reassign them to different buses rest period. Route Management: Map all existing routes and provide a visual representation of the bus network. Enable users to draw new routes and automatically highlight overlaps with existing routes. Optimize route planning to reduce congestion and improve service coverage. Expected Output: A fully functional prototype of the Automated Bus Scheduling and Route Management System demonstrating the above features through the integration of algorithms, data analytics, and GIS technologies. The system will offer a user-friendly interface for schedulers, planners, and managers to interact with the system, manage schedules, plan routes, and access real-time data and reports.
+Organization	Government of NCT of Delhi
+Department	IT Department, GNCTD
+Category	Software
+Theme	Smart Vehicles
+Youtube Link	
+Dataset Link	
+
+Problem Statement ID	
+1613
+Problem Statement Title	
+Automated System for Career Advancements of the Faculties of Higher Education
+Description	
+Background: This problem requires an innovative approach to enhance the efficiency and transparency of faculty self-appraisal in the university settings. Through a robust web-based platform, the system should address the complexities associated with traditional evaluation processes. It should capture and manages intricate details of faculty activities, encompassing research publications, event participation, seminars, projects, and lectures. The project must aim to create a user-friendly environment for faculty members, optimizing the self-appraisal experience. Employing a secure registration and login system ensures data confidentiality and personalized access. The meticulous automated tracking of research outputs (as done automatically by google scholar) and academic engagements streamlines the evaluation process, providing a consolidated record for administrators. By introducing features for logging events, seminars. projects, and lectures, the system offers a holistic view of faculty contributions beyond the classroom. This comprehensive solution should aligns with the objectives of modernizing appraisal methodologies, fostering a culture of continuous improvement, and supporting Paperless India motive. Administrators, on the other hand, can leverage this data to make informed decisions about faculty development and resource allocation. University Administrators can log in to the Admin Panel and access all the form entries submitted by the faculty members. They can view all the details in the form, sort the form entries according to Name, Employee Code or Date of Submission. They can then download the form submission details in a PDF format. In contemporary academic institutions, the process of faculty self-appraisal plays a crucial role in ensuring quality education, fostering professional development, and aligning individual contributions with institutional goals. However, traditional appraisal methods often entail cumbersome paperwork, lack of transparency, and inefficiencies that can hinder comprehensive evaluation. This real-time application seeks to address these challenges by introducing a streamlined, web-based solution that enhances the efficiency and transparency of the appraisal process. This innovative platform should be designed to meticulously capture and manage a wide range of faculty activity, including research publications (automatically as done by google scholar), event participation, seminars, projects, and lectures. By leveraging technology, the system should provide a user-friendly interface that facilitates easy logging and tracking of academic contributions. The secure registration and login system should ensure that faculty data remains confidential and accessible only to authorized personnel. Moreover, the platform should support administrators by offering a consolidated view of faculty performance. The Admin Panel should enable administrators to access, Sort, and download detailed appraisal data, thereby supporting informed decision- making regarding Faculty development and resource allocation. This digital approach should not only modernizes the appraisal process but also it should aligns with the broader objective of promoting sustainable and paperless administrative practices. Detailed Description: In the dynamic landscape of higher education, the imperative for effective systems to evaluate and enhance faculty performance has become increasingly apparent. Existing approaches to faculty appraisal often lack transparency and a data-driven foundation, hindering the ability to recognize and promote excellence. This underscores the pressing need for an innovative solution. The “Automated System for Career Advancements of the Faculties of Higher Education"" project should addresses this critical gap by introducing a comprehensive and dynamic platform. This application must empower faculty members to engage in a transparent and assessment self-driven of their professional activities. By facilitating documentation and evaluation of contributions in teaching, research, and community engagement, the system must offer a transformative approach to performance appraisal within university context. The project must offer numerous benefits to both faculty members and university administrators. Faculty should be able to maintain a detailed and organized record of their professional activities, helping them track progress and identify areas for improvement. Administrators, on the other hand, should leverage this data to make informed decisions about faculty development and resource allocation. Expected Solutions: The primary objectives of the ""Automated System for Career Advancements of the Faculties of Higher Education"" are to alleviate the challenges inherent in traditional paper-based processes. This project must aim to streamline and modernize faculty self-appraisal by implementing a secure, user-friendly web-based platform. The key focus must be on reducing administrative burdens, minimizing time consumption through digital processes, and enhancing data accuracy. By centralizing faculty information, the system seeks to provide administrators with efficient tools for evaluation, contributing to a more transparent and accountable appraisal process. Ultimately, the project aims to optimize the overall faculty assessment experience, fostering a culture of continuous improvement in higher education institutions. REAL-TIME APPLICATION Faculty should be able to update their activities, such as research publications, event participation, and seminars, in real-time, eliminating delays associated with traditional methods. This dynamic system must ensure administrators have instant access to the latest information for timely and informed decision-making. The website's real-time capabilities enhance the overall efficiency of the faculty self-appraisal process, promoting a more agile and responsive approach to performance evaluation in the academic environment. SOFTWARE REQUIREMENT -Web Browser: Compatible web browser (e.g., Chrome, Firefox) for accessing and interacting with the Faculty Self-Appraisal Database Management Website. -Postman: Postman for testing API endpoints and ensuring seamless communication between the web application and server. -Git and GitHub: Git for version control and GitHub for collaborative development, facilitating efficient code management and collaboration. -VSCode: Visual Studio Code (VSCode) as the integrated development environment (IDE) for code editing, debugging, and project management during the development of the web application. HARDWARE REQUIREMENT -OS: Windows 10 or above or any other OS (e.g. Linux). -Processor (not minimum requirement): A modern quad-core or above for seamless and smooth development process of application. -RAM: At least 4 GB of available RAM to be able to run the Web App on the Browser. -GPU: Any GPU can be preferred. -Storage: Sufficient storage can be fulfilled by SSD or HDD. FUNCTIONAL REQUIREMENTS -User Authentication: Users must register and log in securely. Unique user profiles for faculty members and authorized administrators. -Data Collection Form: Implement a comprehensive ""SELF APPRAISAL FORM"" for faculty activities. Capture personal and professional details in a user-friendly interface. -Manage Database: Establish a secure database to store faculty self- appraisal data. Ensure efficient data retrieval and management for evaluation purposes. -Client-Side Scripting: Employ client-side scripting (e.g., JavaScript) for dynamic and responsive user interfaces. Enhance user experience with real-time form validation and interactive features. -Server-Side Scripting: Utilize server-side scripting (e.g.. Node.js, Python) for processing and storing data securely. Enable seamless communication between the front-end and back-end components. -Event Logging: Enable faculty to log events, seminars, projects, and lectures for a comprehensive assessment. Capture details to provide insights into faculty contributions beyond traditional metrics NON - FUNCTIONAL REQUIREMENTS -Performance: The system must respond promptly to user interactions, with minimal latency during data retrieval and form submissions. -Scalability: The web application should accommodate an increasing number of users and data entries without compromising performance. -Reliability: Ensure high system availability with minimal downtime for routine maintenance, updates, or unforeseen issues. -Security: Implement robust security measures, including encryption and access controls, to protect sensitive faculty data and maintain user privacy. -Usability: The interface must be intuitive and user-friendly, requiring minimal training for faculty members and administrators to navigate and use the system efficiently. The implementation of the given problem must successfully address the longstanding challenges embedded in traditional paper-based faculty self-appraisal processes within higher education. The system must possess crucial features, such as secure user authentication, ensuring that faculty members and authorized administrators have unique and protected access to the platform. A comprehensive system should be seamlessly integrated, providing faculty members with a user-friendly interface to submit personal and professional details efficiently. The system must establishe a secure database, ensuring the confidentiality and integrity of faculty self-appraisal data. Robust client-side scripting, powered by JavaScript, it should enhance the user experience with dynamic and responsive interfaces, real-time form validation, and interactive features. Moreover, the system must include an admin panel that provides administrators with centralized access to all submitted appraisal forms. This panel must allow administrators to view, sort, and manage appraisal data efficiently. They can sort entries based on various criteria such as Name, Employee Code, or Date of Submission, streamlining the process of data retrieval and analysis. Additionally, administrators can download the submission details in PDF format, facilitating easy record-keeping and reporting.
+Organization	Government of NCT of Delhi
+Department	IT Department, GNCTD
+Category	Software
+Theme	Smart Education
+Youtube Link	
+Dataset Link
+
+Problem Statement ID	
+1617
+Problem Statement Title	
+Dynamic route rationalization model based on machine learning/AI would be required based on real-time traffic and road parameters.
+Description	
+Transport Sector - DTC is trying to work out various modules for route rationalization. The real-time monitoring of buses for effective route rationalization may be one of the challenges to prevent bunching of buses on a specific route or long delays in arrival of buses. The problem cannot be addressed by fixed time schedule owing to various factors like traffic Conditions, road conditions and other such factors. A dynamic route rationalization model based on machine learning/AI would be required based on real-time traffic and road parameters.
+Organization	Government of NCT of Delhi
+Department	IT Department, GNCTD
+Category	Software
+Theme	Smart Automation
+Youtube Link	
+Dataset Link
+
+Problem Statement ID	
+1629
+Problem Statement Title	
+Freelancing Platform
+Description	
+Project Concept : Freelancing Opportunities for India There is a significant gap in connecting freelancers and gig workers with short-term and project-based job opportunities. An platform like upwork is needed to seamlessly connect freelancers with employers and provide tools for managing freelance projects. Requirements: 1. Freelance Job Marketplace: • Develop a marketplace where freelancers can find short-term jobs, gig work, and project-based opportunities. • Allow employers to post projects, specify requirements, and invite freelancers to apply. 2. Freelancer Profile and Portfolio Management: • Enable freelancers to create detailed profiles showcasing their skills, experiences, and portfolio of past work. • Integrate a rating and review system for feedback on completed projects. 3. Extensive Search & Analytics • Enable Employers/Freelancers to do extensive search in the available data / generated data. • Generation of AI enabled insights into the Data and providing newer ways of information availability for job seekers / employers to engage. • AI based Recommendation Systems for seeking opportunities 4.Escrow Account Creation • Create provisions for an escrow account that can be used to hold the money until the job is fully delivered. • Integrate secure payment gateways to facilitate smooth financial transactions between employers and freelancers. Expected Outcome: The platform will connect freelancers with a wide range of job opportunities and provide them with tools to manage projects efficiently, leading to better job satisfaction and increased income opportunities. NOTE : This is an innovation opportunity and students are encouraged to think out of the box to develop solutions which can be presented in newer ways + which can address the needs in out of the box ways for a certain industry OR makes the platform generic. Above description serves as a guide to specify essential needs that can be satisfied for the developed solution and is not limited only to the scope described
+Organization	Government of Punjab
+Department	Punjab Skill Development Mission (PSDM)
+Category	Software
+Theme	Smart Education
+Youtube Link	
+Dataset Link
+
+
+Problem Statement ID	
+1631
+Problem Statement Title	
+AI-Powered Student Assistance Chatbot for Department of Technical Education, Government of Rajasthan.
+Description	
+Background: There are numerous engineering and polytechnic institutes in Rajasthan running under the Department of Technical Education, Government of Rajasthan. Notably, during the admission process, there is a significant increase in enquiries from various groups, including students, their parents, and other stakeholders. These enquiries cover a wide range of queries related to admission process, eligibility criteria, information about different colleges, fee structure, curriculum , scholarship , hostel facilities, previous year's college and branch-specific allotments placement opportunities and many more. Currently, stakeholders have tocontact colleges individually through phone or email, and sometimes even visit the colleges personally. This process is not only cumbersome for the stakeholders but also demanding to pool manpower for the colleges to manage these inquiries. Detailed Description: With the continuous rise in enquiries, it is becoming increasingly difficult for the colleges to respond promptly and effectively using traditional communication methods. To address this issue more efficiently and ensure timely assistance for everyone, there is a pressing need to adopt new technological solutions. One effective approach is to develop an AI-powered chatbot at centralized level that would serve as a virtual assistant, available 24/7 to answer a wide range of questions. By automating responses to common enquiries, the chatbot would significantly enhance the accessibility to important information and allow staff to focus on handling more complex queries and other critical tasks. For example, the chatbot would provide insights into information about various engineering and polytechnic colleges that falls under the jurisdiction of Department of Technical Education, and guide users through the admission processes, explain fee structures, share curriculum updates, provide details about available scholarships, share alumni information, and share information on job placement opportunities etc This will empower the technical education department because of the ease of providing information, help and advice instantly to prospective students, their parents, and all interested parties. The required information provided by all colleges can be integrated with ease in software. Expected Solutions: 1. Efficient Information Retrieval: The chatbot should rapidly access and provide accurate information from a comprehensive database on topics such as admissions, fees, scholarships, recommendations based on previous years cutoff, minimizing the need for human assistance. Incorporate Natural Language Processing (NLP) to support voice based assistance in English languages and can be extended in Hindi and other regional languages ensuring wide accessibility and understanding. 2. Enhanced User Experience: Design an intuitive interface that allows users to navigate easily and find information quickly. The interface should be straightforward, accessible on common platform, and capable of understanding natural language, ensuring user-friendliness. 3. Reduced Workload: By automating responses to Frequently Asked Questions (FAQ’s), the chatbot will reduce the workload on department staff, allowing them to concentrate on more complex and urgent tasks. 4. Data Insights: The chatbot will gather valuable data from user interactions, helping the department to identify common concerns and optimize it’s services based on these insights.
+Organization	Government of Rajasthan
+Department	Center for Electronic Governance
+Category	Software
+Theme	Smart Education
+Youtube Link	
+Dataset Link
+
+
+Problem Statement ID	
+1637
+Problem Statement Title	
+Mobile App for Direct Market Access for Farmers
+Description	
+Background: Farmers often face challenges in accessing markets, leading to lower income due to middlemen. This gap restricts their ability to sell produce at fair prices. Description: Create a mobile application that connects farmers directly with consumers and retailers. The app should include features for listing produce, negotiating prices, and managing transactions, thereby reducing dependence on intermediaries. Expected Solution: A user-friendly mobile platform that enables farmers to showcase their products and connect with buyers directly, enhancing their income potential.
+Organization	Ministry of Agriculture and Farmers Welfare
+Department	University of Agricultural Sciences, Dharwad (UASD), The Indian Council of Agricultural Research
+Category	Software
+Theme	Agriculture, FoodTech & Rural Development
+Youtube Link	
+Dataset Link
+
+Problem Statement ID	
+1638
+Problem Statement Title	
+AI-Driven Crop Disease Prediction and Management System
+Description	
+Background: Crop diseases can devastate yields, leading to significant financial losses for farmers. Early detection and timely intervention are crucial for effective management. Description: Develop an AI-driven system that analyzes crop images and environmental data to predict potential disease outbreaks. This system will provide farmers with actionable insights and treatment recommendations to mitigate risks. Expected Solution: A mobile and web-based application that utilizes machine learning algorithms to identify crop diseases and suggest preventive measures and treatments based on real-time data.
+Organization	Ministry of Agriculture and Farmers Welfare
+Department	University of Agricultural Sciences, Dharwad (UASD), The Indian Council of Agricultural Research
+Category	Software
+Theme	Agriculture, FoodTech & Rural Development
+Youtube Link	
+Dataset Link
+
+Problem Statement ID	
+1658
+Problem Statement Title	
+Development of a versatile and fast algorithm for the optimal ship routing
+Description	
+Background: Most of the goods are transported around the world by shipping which relies heavily on fossil fuels for powering. Given the expenditure of the shipping industry on the fuel, a main objective of a shipping company is to optimize the ship route for the least fuel consumption. Depending on the type and purpose of the voyage, it is also desirable to optimize several other parameters such as, the travel time, passenger comfort and route safety, to avoid any damage to the ship, cargo, crew and passengers. Optimization of each of these parameters serves a purpose. For instance, an energy efficient route may not be safe in terms of weather. Therefore, to avoid loss of life and property, route weather safety needs to be considered. An application suggesting the optimal route based on the chosen set of optimal parameters for any voyage between two ports in the Indian Ocean, will immensely benefit the Indian shipping industry. Description: At the heart of any optimal ship routing application lies the optimization algorithm. Although scientific literature is available on various methods of optimizing the ship routes, given the commercial potential, there are no applications available publicly which can be customized for the Indian Ocean region. The optimization methods reported in literature range in complexity, computation time, versatility, etc. Various factors, such as, the forcings (surface winds, currents and waves), design of the ship and ship drift characteristics, impact the ship’s motion at sea. The optimal route must be continually evolving because the weather conditions keep changing as a ship proceeds on its voyage. Therefore, it is crucial to choose a suitable optimization method that can optimize several parameters for a range of ships (with varying type, dimensions, drift characteristics of a ship) and develop an algorithm to return an optimal route within a reasonable computational time. The algorithm can optimize for the voyage time and safety to begin with but with a scope for addition of more optimization parameters. To get an idea of the problem, please visit: https://www.youtube.com/watch?v=ct9v-mQgYqE ii) https://www.youtube.com/watch?v=wCTdHRTWtNI Expected Solution: Identification of a versatile optimization method and development of a reasonably fast algorithm, preferably written in an open-source programming language such as Python
+Organization	Ministry of Earth Sciences
+Department	Indian National Center for Ocean Information Services (INCOIS)
+Category	Software
+Theme	Transportation & Logistics
+Youtube Link	
+Dataset Link	The short-term (for the next 5 days) forecasts of surface currents and wave can be obtained from https://incois.gov.in/portal/osf/osf.jsp. The forecasts of surface winds can be provided by INCOIS. INCOIS will strive to provide any other data required.

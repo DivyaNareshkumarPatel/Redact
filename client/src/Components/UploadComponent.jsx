@@ -1,29 +1,38 @@
-import React, { useState, useEffect } from "react";
-import { FaCloudUploadAlt, FaDesktop, FaGoogleDrive, FaCloudDownloadAlt } from "react-icons/fa";
+import React, { useState } from "react";
+import { FaCloudUploadAlt, FaDesktop, FaCloudDownloadAlt } from "react-icons/fa";
+import {jwtDecode} from "jwt-decode";
 import "../style/upload.css";
+
+const getUserIdFromToken = () => {
+  const token = localStorage.getItem('token');
+  console.log(token, "Retrieved token");
+  if (!token) return null;
+  
+  try {
+    const decoded = jwtDecode(token);
+    console.log(decoded, "Decoded JWT");
+    return decoded.id;
+  } catch (error) {
+    console.error("Failed to decode token:", error);
+    return null;
+  }
+};
 
 export default function UploadComponent() {
   const [file, setFile] = useState(null);
-  const [preview, setPreview] = useState(null);
-  const [uploadProgress, setUploadProgress] = useState(0);
   const [dragging, setDragging] = useState(false);
+  const [uploadProgress, setUploadProgress] = useState(0);
 
   const handleFileChange = (event) => {
     const selectedFile = event.target.files[0];
-    URL.revokeObjectURL(preview);
     setFile(selectedFile);
-    const filePreview = URL.createObjectURL(selectedFile);
-    setPreview(filePreview);
   };
 
   const handleDrop = (event) => {
     event.preventDefault();
     setDragging(false);
     const selectedFile = event.dataTransfer.files[0];
-    URL.revokeObjectURL(preview);
     setFile(selectedFile);
-    const filePreview = URL.createObjectURL(selectedFile);
-    setPreview(filePreview);
   };
 
   const handleDragOver = (event) => {
@@ -36,36 +45,44 @@ export default function UploadComponent() {
     setDragging(false);
   };
 
-  const handleGoogleDriveUpload = () => {
-    alert("Google Drive upload functionality coming soon!");
-  };
-
-  const handleUpload = () => {
-    if (!file) {
-      alert("Please select a file!");
+  const handleUpload = async () => {
+    const userId = getUserIdFromToken();
+    if (!file || !userId) {
+      alert("Please select a file and ensure you are logged in!");
       return;
     }
 
-    if (file.type === 'application/pdf') {
-      alert(`File "${file.name}" (PDF) uploaded successfully!`);
-    } else {
-      let progress = 0;
-      const interval = setInterval(() => {
-        if (progress < 100) {
-          progress += 10;
-          setUploadProgress(progress);
-        } else {
-          clearInterval(interval);
-          alert(`File "${file.name}" uploaded successfully!`);
-          setUploadProgress(0);
-        }
-      }, 500);
-    }
-  };
+    const formData = new FormData();
+    formData.append('file', file);
+    formData.append('userId', userId);
 
-  useEffect(() => {
-    return () => URL.revokeObjectURL(preview);
-  }, [preview]);
+    const xhr = new XMLHttpRequest();
+    
+    xhr.upload.addEventListener('progress', (event) => {
+      if (event.lengthComputable) {
+        const percentComplete = (event.loaded / event.total) * 100;
+        setUploadProgress(percentComplete);
+      }
+    });
+
+    xhr.addEventListener('load', () => {
+      if (xhr.status >= 200 && xhr.status < 300) {
+        setFile(null);
+        setUploadProgress(0);
+      } else {
+        console.error('Upload error:', xhr.statusText);
+        alert('Upload failed. Please try again.');
+      }
+    });
+
+    xhr.addEventListener('error', () => {
+      console.error('Upload failed:', xhr.statusText);
+      alert('Upload failed. Please try again.');
+    });
+
+    xhr.open('POST', 'http://localhost:3000/api/upload');
+    xhr.send(formData);
+  };
 
   return (
     <div className="upload-card">
@@ -92,17 +109,13 @@ export default function UploadComponent() {
         </label>
       </div>
 
-      <button
-        className="btn-upload drive-upload"
-        onClick={handleGoogleDriveUpload}
-      >
-        <FaGoogleDrive className="icon" /> Upload from Google Drive
+      <button onClick={handleUpload} className="btn-submit">
+        <FaCloudUploadAlt className="icon" /> Upload File
       </button>
 
-      {preview && (
-        <div className="file-preview">
-          <h3>File Preview:</h3>
-          <img src={preview} alt="File Preview" className="preview-image" />
+      {file && (
+        <div className="file-info">
+          <span>Selected File:</span><span>{file.name}</span>
         </div>
       )}
 
@@ -111,13 +124,11 @@ export default function UploadComponent() {
           <div
             className="progress-bar"
             style={{ width: `${uploadProgress}%` }}
-          ></div>
+          >
+            {Math.round(uploadProgress)}%
+          </div>
         </div>
       )}
-
-      <button onClick={handleUpload} className="btn-submit">
-        <FaCloudUploadAlt className="icon" /> Upload File
-      </button>
     </div>
   );
 }
